@@ -1,0 +1,30 @@
+{
+  "name": "scaffolding-tool",
+  "version": "1.0.0",
+  "description": "> Use scaffolding tool to build your own front end project scaffolding",
+  "bin": {
+    "macaw": "./bin/macaw.js"
+  },
+  "main": "./bin/macaw.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzfrontend/scaffolding-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzfrontend/scaffolding-tool/issues"
+  },
+  "homepage": "https://github.com/dzfrontend/scaffolding-tool#readme",
+  "dependencies": {
+    "commander": "^2.18.0",
+    "download-git-repo": "^1.1.0",
+    "glob": "^7.1.3"
+  }
+}
