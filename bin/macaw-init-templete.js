@@ -24,9 +24,7 @@ let rootName = path.basename(process.cwd())
 if (list.length) {  // If the current directory is not empty(如果当前目录不为空)
   if (list.filter(name => {
     const fileName = path.resolve(process.cwd(), path.join('.', name))
-    const isDir = fs.stat(fileName, (err, stats) => {
-      return stats.isDirectory()
-    })
+    const isDir = fs.statSync(fileName).isDirectory()
     return name.indexOf(projectName) !== -1 && isDir
   }).length !== 0) {
     console.log(`${projectName} directory is exist`)
