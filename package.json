@@ -1,7 +1,7 @@
 {
-  "name": "scaffolding-tool",
-  "version": "1.0.0",
-  "description": "> Use scaffolding tool to build your own front end project scaffolding",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
   "bin": {
     "macaw": "./bin/macaw.js"
   },
@@ -26,6 +26,10 @@
     "commander": "^2.18.0",
     "download-git-repo": "^1.1.0",
     "glob": "^7.1.3",
-    "inquirer": "^6.2.0"
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "latest-version": "^4.0.0",
+    "metalsmith": "^2.3.0",
+    "macaw-ui": "{{supportUiVersion}}",
   }
 }
