@@ -1,3 +1,3 @@
-console.log('macaw-hello')
+console.log('command-hello')
 
-// node ./bin/macaw.js hello  => Terminal display 'hello, commander'
+// node ./bin/command.js hello  => Terminal display 'hello, commander'
