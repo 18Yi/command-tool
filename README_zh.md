@@ -2,6 +2,20 @@
 
 > 使用这个命令行工具定制你自己的前端工程模板
 
+# 安装
+
+	npm install command-tool -g
+
+# 用法
+
+	command-tool init <project-name>
+
+# 用例
+
+此示例将从默认的url下载模板，项目名称是my-templete
+
+	command-tool init my-templete
+
 # 脚手架工具能做什么？
 
 > 脚手架工具可以构建像react-create-app，vue-cli和各种前端定制模板，这个命令行工具是脚手架工具的基础

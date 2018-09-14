@@ -14,14 +14,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dzfrontend/scaffolding-tool.git"
+    "url": "git+https://github.com/dzfrontend/command-tool.git"
   },
-  "author": "",
+  "keywords": [
+    "command-tool",
+    "scaffolding tools",
+    "templete"
+  ],
+  "author": "dzfrontend",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dzfrontend/scaffolding-tool/issues"
+    "url": "https://github.com/dzfrontend/command-tool/issues"
   },
-  "homepage": "https://github.com/dzfrontend/scaffolding-tool#readme",
+  "homepage": "https://github.com/dzfrontend/command-tool#readme",
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
