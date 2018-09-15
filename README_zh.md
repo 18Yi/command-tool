@@ -13,21 +13,21 @@
 # 用法
 
 	// default template demo
-	command-tool init <project-name>
+	command init <project-name>
 
 	//use your github template
-	command-tool init <project-name> <github-name>/<github-project>
+	command init <project-name> <github-name>/<github-project>
 
 # 用例
 
 此示例将从默认的url下载模板，项目名称是my-template
 
-	command-tool init my-template
+	command init my-template
 
 
 此示例将生成一个react的模板从https://github.com/dzfrontend/react-cli
 
-	command-tool init my-react -r dzfrontend/react-cli
+	command init my-react -r dzfrontend/react-cli
 
 # 脚手架工具能做什么？
 

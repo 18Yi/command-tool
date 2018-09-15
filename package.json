@@ -1,11 +1,10 @@
 {
   "name": "command-tool",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Use this command tool to build your own front end project templates",
   "bin": {
     "command": "./bin/command.js"
   },
-  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
