@@ -1,20 +1,23 @@
 #!/usr/bin/env node
 /**
- * to download templete from git url
+ * to download template from git url
  */
 
 const program = require('commander')
 const path = require('path')
 const fs = require('fs')
 const glob = require('glob') // npm i glob -D
-const download = require('../lib/download') // Download templete(下载模板)
+const download = require('../lib/download') // Download template(下载模板)
 const inquirer = require('inquirer') // Command line interaction(命令行交互)
 const latestVersion = require('latest-version') // get the package latest version
 const generator = require('../lib/generator')
 const chalk = require('chalk') // command color
 const logSymbols = require('log-symbols')
 
-program.usage('<project-name>').parse(process.argv)
+program.usage('<project-name>')
+.option('-r, --repository [repository]', 'assign to repository')
+.parse(process.argv)
+
 // Get the project name based on input(根据输入，获取项目名称)
 let projectName = program.args[0]
 
@@ -65,7 +68,8 @@ function go() {
   next.then(projectName => {
     if(projectName !== '.'){
       fs.mkdirSync(projectName)
-      download('https://github.com/dzfrontend/react-cli.git#develop', projectName)
+      const url = program.repository ? program.repository : 'dzfrontend/command-tool-template'
+      download(url, projectName)
       .then(target => {
         return {
           name: projectName,

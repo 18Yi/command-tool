@@ -2,22 +2,35 @@
 
 [中文README](./README_zh.md)
 
-> Use this command tool to build your own front end project templetes
+> A simple CLI scaffolding for front-end projects
+> Use this command tool to build your own front end project templates
 
 # Installation
 
-	npm install command-tool -g
+	// npm
+	npm install -g command-tool
+
+	// yarn
+	yarn global add command-tool
 
 # Usage
 
+	// default template demo
 	command-tool init <project-name>
+
+	//use your github template
+	command-tool init <project-name> <github-name>/<github-project>
 
 # Example
 
-this example will download templete from default url, the project name is my-temptele
+this example will download template from default url, the project name is my-temptele
 
-	command-tool init my-templete
-	
+	command-tool init my-template
+
+this example will make a react template from https://github.com/dzfrontend/react-cli
+
+	command-tool init my-react -r dzfrontend/react-cli
+
 # What can scaffolding tool do?
 
 >  this command tool is the base of scaffolding tool. this scaffolding tool can be built like react-create-app, vue-cli and various front end templates.

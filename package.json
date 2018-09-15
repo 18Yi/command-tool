@@ -1,7 +1,7 @@
 {
   "name": "command-tool",
-  "version": "1.0.3",
-  "description": "Use this command tool to build your own front end project templetes",
+  "version": "1.0.4",
+  "description": "Use this command tool to build your own front end project templates",
   "bin": {
     "command": "./bin/command.js"
   },
@@ -19,7 +19,7 @@
   "keywords": [
     "command-tool",
     "scaffolding tools",
-    "templete"
+    "template"
   ],
   "author": "dzfrontend",
   "license": "ISC",
