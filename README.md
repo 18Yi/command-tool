@@ -16,20 +16,20 @@
 # Usage
 
 	// default template demo
-	command-tool init <project-name>
+	command init <project-name>
 
 	//use your github template
-	command-tool init <project-name> <github-name>/<github-project>
+	command init <project-name> <github-name>/<github-project>
 
 # Example
 
 this example will download template from default url, the project name is my-temptele
 
-	command-tool init my-template
+	command init my-template
 
 this example will make a react template from https://github.com/dzfrontend/react-cli
 
-	command-tool init my-react -r dzfrontend/react-cli
+	command init my-react -r dzfrontend/react-cli
 
 # What can scaffolding tool do?
 
